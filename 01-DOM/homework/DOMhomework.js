@@ -58,13 +58,25 @@ function buildToDo(todo, index) {
 
   let toDoShell = document.createElement("div");
   toDoShell.className = "toDoShell";
+
   let toDoText = document.createElement("span");
   toDoText.innerHTML = todo.description;
-  toDoText.id = index;
+
+  const checkBox = document.createElement('input');
+  checkBox.type = "checkbox";
+  checkBox.id = index;
+  checkBox.className= "completeCheckbox";
+  checkBox.addEventListener('click', completeToDo);
+
   if (todo.complete) {
     toDoText.className = "completeText";
+    checkBox.setAttribute("checked", "true");
   };
+  
+  
+  toDoShell.appendChild(checkBox);
   toDoShell.appendChild(toDoText);
+
   return toDoShell;
 
 }
@@ -155,11 +167,11 @@ function completeToDo(event) {
   const index = event.target.id;
   // Tu código acá:
 
-  
-  
+  toDoItems[index].completeToDo();
+  displayToDos();
+
 }
 
-  displayToDos();
 // Una vez que llegaste a este punto verificá que todos los tests pasen
 
 
@@ -178,6 +190,7 @@ function completeToDo(event) {
 
 // Acá debes insertar la llamada a 'displayToDos'
 
+displayToDos();
 
 // ---------------------------- NO CAMBIES NADA DE ACÁ PARA ABAJO ----------------------------- //
 if (typeof module !== 'undefined') {
