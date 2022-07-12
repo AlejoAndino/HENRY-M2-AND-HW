@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    background-color: rgb(129, 129, 209);
+    width: 325px;
+    height: 225px;
+    border-radius: 5%;
+    border: 2px solid rgb(8, 8, 8);
+    margin: 20px 60px 20px 60px;
+}
+
+.button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: brown;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 15%;
+}
+
+.nameCity {
+    padding: 25px;
+}
+
+.tempLogoContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}

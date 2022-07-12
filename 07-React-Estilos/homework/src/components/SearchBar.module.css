@@ -1,0 +1,22 @@
+.input {
+    width: 200px;
+    height: 40px;
+    border-radius: 8%;
+    border: 1px solid black;
+
+}
+
+::placeholder {
+    font-size: 18px;
+    padding-left: 7px;
+}
+
+.button {
+    width: 100px;
+    height: 39px;
+    border-radius: 8%;
+    margin-left: 20px;
+    border: 1px solid rgb(17, 202, 17);
+    color: rgb(10, 231, 10);
+    background-color: transparent;
+}
