@@ -16,3 +16,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  text-align: center;
+  color: rgb(60, 203, 38);
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.lead {
+  color: rgb(96, 201, 80);
+}

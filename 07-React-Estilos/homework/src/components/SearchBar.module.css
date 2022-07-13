@@ -19,4 +19,9 @@
     border: 1px solid rgb(17, 202, 17);
     color: rgb(10, 231, 10);
     background-color: transparent;
+    transition: .2s;
+}
+
+.button:hover {
+    background-color: rgba(51, 167, 51, 0.3);
 }

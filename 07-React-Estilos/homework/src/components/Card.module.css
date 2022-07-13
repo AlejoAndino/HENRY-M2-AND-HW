@@ -1,11 +1,12 @@
 .container {
     position: relative;
-    background-color: rgb(129, 129, 209);
+    background-color: rgba(128, 128, 228, 0.4);
     width: 325px;
     height: 225px;
     border-radius: 5%;
     border: 2px solid rgb(8, 8, 8);
     margin: 20px 60px 20px 60px;
+    transition: .4s;
 }
 
 .button {
@@ -32,4 +33,10 @@
 p {
     font-size: 20px;
     color: black;
+}
+
+.container:hover {
+    background-color: rgba(128, 128, 228, 0.9);
+    width: 350px;
+    height: 250px;
 }
